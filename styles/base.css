@@ -76,7 +76,8 @@ h1 {
     margin-bottom: 50px;
 }
 
-.left-section, .right-section {
+.left-section,
+.right-section {
     margin: 0;
     padding: 0;
     background-color: #F1F1F2;
@@ -103,7 +104,8 @@ h1 {
     align-items: start;
 }
 
-.left-section h3, .right-section h3 {
+.left-section h3,
+.right-section h3 {
     padding: 1rem;
     margin: 0;
 }
@@ -127,7 +129,8 @@ h1 {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.about-header, .resource-header {
+.about-header,
+.resource-header {
     margin: 0;
     width: 100%;
     border-top-left-radius: 10px;
