@@ -1,16 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+header {
+    width: 100%;
+}
+
 .title {
     background-color: #1d3557;
     text-align: center;
 }
 
 body {
+    font-family: "Roboto", sans-serif;
     background-color: #F1F1F2;
     margin: 0;
     padding: 0;
-    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 
@@ -30,7 +35,7 @@ h1 {
 }
 
 .nav-buttons {
-    background-color: darkgray;
+    background-color: #495057;
     text-align: center;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
@@ -53,14 +58,29 @@ h1 {
 .sections-container {
     display: flex;
     justify-content: center;
-    width: 90%;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .left-section {
-    width: 60%;
+    background-color: #F1F1F2;
+    width: 65%;
+    color: black;
 }
 
 .right-section {
-    width: 30%;
+    background-color: #F1F1F2;
+    width: 35%;
+    color: black;
+}
+
+.about-header {
+    background-color: #1d3557;
+    color: white;
+    text-align: center;
+}
+
+.resource-header {
+    background-color: #1d3557;
+    color: white;
+    text-align: center;
 }
