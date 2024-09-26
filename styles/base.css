@@ -104,8 +104,8 @@ nav a:hover {
     align-items: start;
 }
 
-.left-section h3,
-.right-section h3 {
+.left-section h2,
+.right-section h2 {
     padding: 1rem;
     margin: 0;
 }
