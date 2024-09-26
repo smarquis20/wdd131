@@ -41,6 +41,10 @@ h1 {
     padding: 40px 0 40px 0;
 }
 
+main {
+    max-width: 100%;
+}
+
 nav {
     display: flex;
     justify-content: center;
