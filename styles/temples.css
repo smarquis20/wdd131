@@ -3,11 +3,12 @@
     --font-color1: white;
     --paragraph-font: "Roboto", sans-serif;
     --hover-color1: #aeaeaf;
+    --body-color1: #f1f1f2;
 }
 
 body {
     font-family: var(--paragraph-font);
-    background-color: #F1F1F2;
+    background-color: var(--body-color1);
     margin: 0;
     padding: 0;
 }
