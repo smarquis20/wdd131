@@ -8,22 +8,15 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    align-items: center;
 }
 
 .navigation {
     flex-direction: row;
 }
 
-.navigation li {
-    display: flex;
-    margin-left: 10px;
-}
-
 .navigation a {
     color: white;
-    font-size: 15px;
-    padding: 10px 10px;
+    font-size: 20px;
     text-decoration: none;
 }
 
