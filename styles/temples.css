@@ -2,6 +2,7 @@
     --header-color: #495057;
     --font-color1: white;
     --paragraph-font: "Roboto", sans-serif;
+    --hover-color1: #aeaeaf;
 }
 
 body {
@@ -70,7 +71,7 @@ nav.open {
 }
 
 .navigation a:hover {
-    color: #aeaeaf;
+    color: var(--hover-color1);
     font-weight: bold;
     padding: 20px 10px;
 }
