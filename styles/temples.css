@@ -48,6 +48,10 @@ nav {
     margin-right: auto;
 }
 
+nav li {
+    margin-bottom: 20px;
+}
+
 
 nav.open {
     display: flex;
