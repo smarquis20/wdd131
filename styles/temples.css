@@ -14,7 +14,7 @@ body {
 header {
     background-color: var(--header-color);
     color: var(--font-color1);
-    padding: 10px;
+    padding: 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -62,7 +62,7 @@ nav.open {
 
 .navigation a {
     color: var(--font-color1);
-    font-size: 20px;
+    font-size: 18px;
     padding: 20px 10px;
     text-align: center;
     text-decoration: none;
