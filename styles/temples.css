@@ -120,6 +120,6 @@ footer {
     text-align: center;
     padding: 10px;
     color: var(--font-color1);
-    background-color: var(--header-color1);
+    background-color: var(--header-color);
     box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.2);
 }
