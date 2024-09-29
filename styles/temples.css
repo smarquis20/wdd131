@@ -40,6 +40,11 @@ header h1 {
     right: 15px;
 }
 
+#hamburger-menu.open {
+    right: 15px;
+    top: 25px;
+}
+
 nav {
     display: none;
     justify-content: flex-end;
