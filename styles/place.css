@@ -3,6 +3,7 @@
     --font-color: white;
     --section-color: white;
     --h2-color: #ffb81c;
+    --black-font: black;
     --transparent-background: rgba(255,255,255,0.8)
 }
 
@@ -15,8 +16,8 @@ header {
     text-align: center;
     padding: 15px;
     background-color: var(--header-color);
-    color: var(--font-color);
-    border-bottom: 3px solid black;
+    color: var(--black-font);
+    border-bottom: 3px solid var(--black-font);
     text-shadow: 2px 2px 2px var(--h2-color);
 }
 
@@ -79,9 +80,9 @@ footer {
     text-align: center;
     padding: 10px;
     background-color: var(--header-color);
-    color: var(--font-color);
+    color: var(--black-font);
     font-size: 1rem;
-    border-top: 1px solid black;
+    border-top: 1px solid var(--black-font);
 }
 
 @media (min-width: 850px) {
@@ -137,10 +138,9 @@ footer {
         background-color: var(--h2-color);
         padding: 15px;
         width: 90%;
-        color: var(--font-color);
-        text-shadow: 2px 2px 2px black;
+        color: var(--black-font);
         margin-left: -25px;
-        border: 1px solid black;
+        border: 1px solid var(--black-font);
     }
 
     .data-header, .weather-header {
