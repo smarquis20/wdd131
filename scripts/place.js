@@ -10,7 +10,7 @@ function calculateWindChill(temp,windSpeed) {
     }
 }
 
-let temperature = 40;
+let temperature = 90;
 let windSpeed = 20;
 let windChill = calculateWindChill(temperature, windSpeed);
 
