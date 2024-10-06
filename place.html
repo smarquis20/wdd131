@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Place Webpage</title>
+    <meta name="description" content="WDD 131 - Place - Missouri">
+    <meta name="author" content="Shaun Marquis">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Kansas City, Missouri</h1>
+    </header>
+    <main>
+        <section class="hero">
+            <picture>
+                <source srcset="images/hero-large.webp" media="(min-width: 850px)">
+                <img src="images/hero-small.webp" alt="Kansas City Missouri">
+            </picture>
+            <section class="place-data">
+                <h2>Data</h2>
+                <div class="data-header">
+                    <p>Area:</p>
+                    <p>Population:</p>
+                    <p>Capital:</p>
+                    <p>Languages:</p>
+                    <p>Currency:</p>
+                    <p>Time Zone:</p>
+                    <p>Calling Code:</p>
+                    <p>Internet TLD:</p>
+                </div>
+                <div class="data-info">
+                    <p>319 sq/m</p>
+                    <p>1,739,000</p>
+                    <p>Jefferson City</p>
+                    <p>English / Spanish</p>
+                    <p>US Dollar</p>
+                    <p>UTC -5</p>
+                    <p>816</p>
+                    <p>.us</p>
+                </div>
+            </section>
+            <section class="weather">
+                <h2>Weather</h2>
+                <img src="images/weather-sun.svg" alt="Sunny Weather Icon">
+                <div class="weather-header">
+                    <p>Temperature:</p>
+                    <p>Conditions:</p>
+                    <p>Windspeed:</p>
+                    <p>Wind Chill:</p>
+                </div>
+                <div class="weather-info">
+                    <p>90°F</p>
+                    <p>Sunny</p>
+                    <p>20 mph</p>
+                    <p><span id="wind-chill"></span></p>
+                </div>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> | Shaun Marquis | Missouri, USA</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
