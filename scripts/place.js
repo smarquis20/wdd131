@@ -17,5 +17,5 @@ let windChill = calculateWindChill(temperature, windSpeed);
 if (temperature <= 50 && windSpeed > 3) {
 document.getElementById("wind-chill").textContent = windChill + "°F";
 } else {
-    document.getElementById("wind-chill").textContent = windChill
+    document.getElementById("wind-chill").textContent = windChill;
 }
