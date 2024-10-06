@@ -1,6 +1,6 @@
 :root {
     --header-color: #ca2430;
-    --font-color: white;
+    --font-color: #f2efd7;
     --section-color: white;
     --h2-color: #ffb81c;
     --black-font: black;
@@ -16,7 +16,7 @@ header {
     text-align: center;
     padding: 15px;
     background-color: var(--header-color);
-    color: var(--black-font);
+    color: var(--font-color);
     border-bottom: 3px solid var(--black-font);
     text-shadow: 2px 2px 2px var(--h2-color);
 }
@@ -80,7 +80,7 @@ footer {
     text-align: center;
     padding: 10px;
     background-color: var(--header-color);
-    color: var(--black-font);
+    color: var(--font-color);
     font-size: 1rem;
     border-top: 1px solid var(--black-font);
 }
