@@ -125,16 +125,8 @@ footer {
     }
 
     .weather h2::after {
-        background-image: url("../images/weather-sun.svg");
-        background-size: 60px 60px;
-        background-repeat: no-repeat;
-        display: inline-block;
-        position: absolute;
-        top: 15px;
-        margin-left: 15px;
-        width: 60px;
-        height: 60px;
-        content: "";
+        content: "☼";
+        margin-left: 20px;
     }
 
     .place-data h2,
