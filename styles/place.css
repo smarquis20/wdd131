@@ -4,12 +4,11 @@
     --section-color: white;
     --h2-color: #ffb81c;
     --black-font: black;
-    --transparent-background: rgba(255,255,255,0.8)
+    --transparent-background: rgba(255, 255, 255, 0.8)
 }
 
 body {
     margin: 0;
-    font-family: Roboto, helvetica, sans-serif;
 }
 
 header {
@@ -36,7 +35,8 @@ h1 {
     height: auto;
 }
 
-.place-data, .weather {
+.place-data,
+.weather {
     padding: 15px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     background-color: var(--section-color);
@@ -45,25 +45,29 @@ h1 {
     gap: 15px;
 }
 
-.place-data h2, .weather h2 {
+.place-data h2,
+.weather h2 {
     text-align: center;
     font-size: 1.5rem;
     grid-column: span 2;
     margin: 0;
 }
 
-.place-data p, .weather p {
+.place-data p,
+.weather p {
     margin: 5px 0;
     font-size: 1rem;
 }
 
-.data-header, .weather-header {
+.data-header,
+.weather-header {
     margin: 0;
     grid-column: 1;
     text-align: right;
 }
 
-.data-info, .weather-info {
+.data-info,
+.weather-info {
     margin: 0;
     grid-column: 2;
     text-align: left;
@@ -128,12 +132,13 @@ footer {
         position: absolute;
         top: 15px;
         margin-left: 15px;
-        width: 60px; 
+        width: 60px;
         height: 60px;
-        content:"";
+        content: "";
     }
 
-    .place-data h2, .weather h2 {
+    .place-data h2,
+    .weather h2 {
         text-align: left;
         background-color: var(--h2-color);
         padding: 15px;
@@ -143,7 +148,8 @@ footer {
         border: 1px solid var(--black-font);
     }
 
-    .data-header, .weather-header {
+    .data-header,
+    .weather-header {
         font-weight: bold;
     }
 }
