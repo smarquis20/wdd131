@@ -119,6 +119,10 @@ section {
     
 }
 
+section:hover {
+    transform: translateY(-10px);
+}
+
 section h3 {
     font-size: 1.2rem;
     margin: 10px 0;
