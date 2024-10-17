@@ -1,0 +1,147 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    background-color: #f4f4f4;
+    justify-content: center;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.review-form {
+    background-color: lightgray;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    width: 600px;
+}
+
+.review-form label {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.review-form select,
+.review-form input[type="date"],
+.review-form input[type="text"] {
+    width: 97%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.review-form textarea {
+    width: 97%;
+    height: 150px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.star-container {
+    display: flex;
+    align-items: center;
+    width: 160px;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 40px auto;
+    position: relative;
+  }
+  
+  .star-container input {
+    display: none;
+  }
+  
+  .star-container > label {
+    width: 50px;
+    height: 50px;
+    font-family: Arial;
+    font-size: 30px;
+    transition: 0.2s ease;
+    color: orange;
+  }
+  
+  .star-container label:hover {
+    color: #d9f349;
+    transition: 0.2s ease;
+  }
+  .star-container label:active::before {
+    transform:scale(1.1);
+  }
+  
+  .star-container label::before {
+    content: '\2606';
+    position: absolute;
+    top: 0px;
+    line-height: 26px;
+  }
+  
+  .star-container input:checked ~ label:before {
+    content:'\2605';
+  }
+
+.rating {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.rating label {
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+}
+
+.rating input[type="radio"] {
+    display: none;
+}
+
+.rating input[type="radio"]:checked > label {
+    color: #ffc700;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.checkbox-container input {
+    margin-right: 10px;
+}
+
+.review-form input[type="submit"] {
+    width: auto;
+    background-color: #2831a7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #4345c4;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+}

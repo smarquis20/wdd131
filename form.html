@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Product Review Dynamic Webpage</title>
+    <meta name="description" content="WDD 131 - Dynamic Product Form - Missouri">
+    <meta name="author" content="Shaun Marquis">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form action="review.html" method="get" class="review-form">
+            <label for="productName">Product Name</label>
+            <select id="productName" name="productName" required>
+                <option value="" disabled selected>Select a product...</option>
+            </select>
+            <fieldset>
+                <legend>Overall Rating</legend>
+                <div class="rating">
+                    <div class="star-container">
+                        <label for="5star"></label>
+                        <input type="radio" id="5star" name="rating" value="5" required>
+                        <label for="4star"></label>
+                        <input type="radio" id="4star" name="rating" value="4" required>
+                        <label for="3star"></label>
+                        <input type="radio" id="3star" name="rating" value="3" required>
+                        <label for="2star"></label>
+                        <input type="radio" id="2star" name="rating" value="2" required>
+                        <label for="1star"></labl>
+                        <input type="radio" id="1star" name="rating" value="1" required>
+                    </div>
+                </div>
+            </fieldset>
+
+            <label for="installationDate">Date of Installation</label>
+            <input type="date" id="installationDate" name="installationDate" required>
+
+            <fieldset>
+                <div class="checkbox-container">
+                    <input type="checkbox" id="feature1" name="features" value="Feature 1">
+                    <label for="feature1">Durability</label>
+                </div>
+                <div class="checkbox-container">
+                    <input type="checkbox" id="feature2" name="features" value="Feature 2">
+                    <label for="feature2">Ease of Use</label>
+                </div>
+                <div class="checkbox-container">
+                    <input type="checkbox" id="feature3" name="features" value="Feature 3">
+                    <label for="feature3">Performance</label>
+                </div>
+                <div class="checkbox-container">
+                    <input type="checkbox" id="feature4" name="features" value="Feature 4">
+                    <label for="feature4">Design</label>
+                </div>
+            </fieldset>
+
+            <label for="writtenReview">Written Review</label>
+            <textarea id="writtenReview" name="writtenReview"></textarea>
+
+            <label for="userName">Your Name (Optional)</label>
+            <input type="text" id="userName" name="userName">
+
+            <input type="submit" value="Submit Review">
+        </form>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> | Shaun Marquis | Missouri, USA</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
