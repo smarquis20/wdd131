@@ -55,62 +55,43 @@ header {
     display: flex;
     align-items: center;
     width: 160px;
-    flex-direction: row;
+    flex-direction: row-reverse;
     justify-content: space-between;
-    margin: 40px auto;
+    margin: 60px auto;
     position: relative;
-  }
-  
-  .star-container input {
+}
+
+.star-container input {
     display: none;
-  }
-  
-  .star-container > label {
+}
+
+.star-container>label {
     width: 50px;
     height: 50px;
     font-family: Arial;
     font-size: 30px;
     transition: 0.2s ease;
     color: orange;
-  }
-  
-  .star-container label:hover {
-    color: #d9f349;
+}
+
+.star-container label:hover {
+    color: black;
     transition: 0.2s ease;
-  }
-  .star-container label:active::before {
-    transform:scale(1.1);
-  }
-  
-  .star-container label::before {
+}
+
+.star-container label:active::before {
+    transform: scale(1.1);
+}
+
+.star-container label::before {
     content: '\2606';
     position: absolute;
     top: 0px;
-    line-height: 26px;
-  }
-  
-  .star-container input:checked ~ label:before {
-    content:'\2605';
-  }
-
-.rating {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
+    line-height: 70px;
 }
 
-.rating label {
-    font-size: 20px;
-    color: black;
-    cursor: pointer;
-}
-
-.rating input[type="radio"] {
-    display: none;
-}
-
-.rating input[type="radio"]:checked > label {
-    color: #ffc700;
+.star-container input:checked~label:before {
+    content: '\2605';
 }
 
 .checkbox-container {

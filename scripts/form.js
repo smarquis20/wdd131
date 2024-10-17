@@ -1,3 +1,6 @@
+document.getElementById("currentyear").innerHTML = new Date().getFullYear();
+document.getElementById("lastModified").innerHTML = document.lastModified;
+
 const products = [
     {
         id: "fc-1888",
@@ -27,7 +30,7 @@ const products = [
 ];
 
 
-window.onload = function() {
+window.onload = function () {
     const productChoice = document.getElementById("productName");
     products.forEach(product => {
         let choice = document.createElement("option")
