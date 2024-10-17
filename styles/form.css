@@ -54,10 +54,10 @@ header {
 .star-container {
     display: flex;
     align-items: center;
-    width: 160px;
+    width: 360px;
     flex-direction: row-reverse;
     justify-content: space-between;
-    margin: 60px auto;
+    margin: 40px auto;
     position: relative;
 }
 
@@ -65,11 +65,11 @@ header {
     display: none;
 }
 
-.star-container>label {
-    width: 50px;
-    height: 50px;
+.star-container > label {
+    width: 30px;
+    height: 30px;
     font-family: Arial;
-    font-size: 30px;
+    font-size: 55px;
     transition: 0.2s ease;
     color: orange;
 }
@@ -87,7 +87,7 @@ header {
     content: '\2606';
     position: absolute;
     top: 0px;
-    line-height: 70px;
+    line-height: 40px;
 }
 
 .star-container input:checked~label:before {
@@ -101,20 +101,22 @@ header {
 }
 
 .checkbox-container input {
+    width: 20px;
+    height: 20px;
     margin-right: 10px;
 }
 
 .review-form input[type="submit"] {
-    width: auto;
     background-color: #2831a7;
     color: white;
     border: none;
     border-radius: 5px;
     padding: 15px;
     cursor: pointer;
+    margin: 20px auto;
 }
 
-input[type="submit"]:hover {
+.review-form input[type="submit"]:hover {
     background-color: #4345c4;
 }
 
