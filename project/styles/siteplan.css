@@ -1,5 +1,10 @@
+@font-face {
+    font-family: "caecilia";
+    src: url("../font/caecilia.otf");
+}
+
 body {
-    font-family: "Domine", serif;
+    font-family: "caecilia";
     margin: 0;
     padding: 0;
 }
@@ -16,6 +21,9 @@ header {
     margin: 0;
     padding: 0;
     text-align: center;
+    margin: 0;
+    padding: 20px 0 20px 0;
+    margin-bottom: 20px;
 }
 
 .text-container {
@@ -25,4 +33,19 @@ header {
     border-radius: 10px;
     padding: 20px;
     margin-bottom: 20px;
+}
+
+img {
+    border: 1px solid black;
+}
+
+.image {
+    margin-top: 40px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #C3D6B6;
+    margin-top: 20px;
 }
