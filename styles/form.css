@@ -120,6 +120,14 @@ header {
     background-color: #4345c4;
 }
 
+.submitted-text {
+    text-align: center;
+}
+
+#donotneed {
+    display: none;
+}
+
 footer {
     background-color: #333;
     color: white;
