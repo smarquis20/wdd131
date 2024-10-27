@@ -153,7 +153,7 @@ header {
 .half-background {
     position: relative;
     height: 800px;
-    background-image: url("../images/home_background.jpg");
+    background-image: url("../images/home_background.webp");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
