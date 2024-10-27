@@ -95,7 +95,7 @@ function saveRecipe(event) {
     const ingredients = document.getElementById("ingredients").value;
     const instructions = document.getElementById("instructions").value;
     const imageInput = document.getElementById("image");
-    const defaultImage = "images/default-recipe.png";
+    const defaultImage = "images/default-recipe.webp";
 
     if (imageInput.files && imageInput.files[0]) {
         const reader = new FileReader();
