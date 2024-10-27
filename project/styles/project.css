@@ -202,8 +202,8 @@ header {
     margin-top: 20px;
     display: grid;
     gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    max-width: 800px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    max-width: 1000px;
     margin-bottom: 20px;
 }
 
@@ -218,6 +218,13 @@ header {
     align-items: center;
     text-align: center;
     padding-bottom: 40px;
+}
+
+.recipe h3 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
 }
 
 .search-container {
@@ -279,6 +286,7 @@ header {
 
 .window-content h2 {
     text-align: center;
+    max-width: 100%;
 }
 
 .window-content input[type="file"] {
@@ -310,6 +318,7 @@ header {
     font-size: 16px;
     color: #333;
     resize: none;
+    margin-bottom: 15px;
 }
 
 #recipe-window label {
@@ -324,6 +333,7 @@ header {
     font-size: 16px;
     color: #333;
     background: transparent;
+    margin-bottom: 15px;
 }
 
 .no-recipe-message {

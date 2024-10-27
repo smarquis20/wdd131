@@ -88,7 +88,9 @@ function closeRecipeDetailWindow() {
     document.getElementById("recipe-detail-window").style.display = "none";
 }
 
-function saveRecipe() {
+function saveRecipe(event) {
+    event.preventDefault();
+
     const title = document.getElementById("title").value;
     const ingredients = document.getElementById("ingredients").value;
     const instructions = document.getElementById("instructions").value;
