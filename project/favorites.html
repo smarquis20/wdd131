@@ -4,8 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>My Recipes</title>
-    <meta name="description" content="WDD 131 - Final Project - Recipe Page">
+    <title>Favorite Recipes</title>
+    <meta name="description" content="WDD 131 - Final Project - Favorite Recipe Page">
     <meta name="author" content="Shaun Marquis">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,28 +40,9 @@
             <input type="text" id="search-bar" placeholder="🔍 Search Recipes..." oninput="searchRecipes()">
         </div>
         <div class="recipe-body">
-            <div id="recipe-list"></div>
+            <div id="favorite-recipe-list"></div>
         </div>
     </main>
-    <button id="add-recipe-button" onclick="openRecipeWindow()">+</button>
-    <div id="recipe-window" class="window">
-        <div class="window-content">
-            <span class="close" onclick="closeRecipeWindow()">&times;</span>
-            <h2>Add New Recipe</h2>
-            <form id="recipe-form" onsubmit="saveRecipe(event)">
-                <label for="title">Title:</label>
-                <input type="text" id="title" required>
-                <label for="ingredients">Ingredients:</label>
-                <textarea id="ingredients" required></textarea>
-                <label for="instructions">Instructions:</label>
-                <textarea id="instructions" required></textarea>
-                <label for="image">Recipe Image:</label>
-                <input type="file" id="image" accept="image/*">
-
-                <button id="save-recipe-button" type="submit">Save Recipe</button>
-            </form>
-        </div>
-    </div>
     <div id="recipe-detail-window" class="window">
         <div class="window-content">
             <span class="close" onclick="closeRecipeDetailWindow()">&times;</span>

@@ -207,6 +207,15 @@ header {
     margin-bottom: 20px;
 }
 
+#favorite-recipe-list {
+    margin-top: 20px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    max-width: 1000px;
+    margin-bottom: 20px;
+}
+
 .recipe {
     background-color: white;
     border-radius: 10px;
@@ -401,6 +410,19 @@ header {
 
 .close:hover {
     color: #e23a37;
+}
+
+#favorite-button {
+    font-size: 18px;
+    color: gold;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#favorite-button:hover {
+    color: darkorange;
 }
 
 footer {

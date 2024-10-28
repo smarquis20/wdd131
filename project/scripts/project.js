@@ -1,6 +1,12 @@
 document.getElementById("currentyear").innerHTML = new Date().getFullYear();
 document.getElementById("lastModified").innerHTML = document.lastModified;
-document.addEventListener("DOMContentLoaded", loadRecipes);
+document.addEventListener("DOMContentLoaded", () => {
+    if (window.location.pathname.includes("favorites.html")) {
+        loadFavoriteRecipes();
+    } else {
+        loadRecipes();
+    }
+});
 
 const menu = document.getElementById("menu");
 const menuButton = document.getElementById("menuButton");
@@ -36,6 +42,12 @@ document.addEventListener("click", (event) => {
 function loadRecipes() {
     const recipes = JSON.parse(localStorage.getItem("recipes")) || [];
     displayRecipes(recipes);
+}
+
+function loadFavoriteRecipes() {
+    const recipes = JSON.parse(localStorage.getItem("recipes")) || [];
+    const favoriteRecipes = recipes.filter(recipe => recipe.favorite);
+    displayFavoriteRecipes(favoriteRecipes);
 }
 
 function displayRecipes(recipes) {
@@ -76,12 +88,65 @@ function displayRecipes(recipes) {
     });
 }
 
+function displayFavoriteRecipes(favoriteRecipes) {
+    const favoriteRecipeList = document.getElementById("favorite-recipe-list");
+    favoriteRecipeList.innerHTML = "";
+
+    if (favoriteRecipes.length === 0) {
+        favoriteRecipeList.innerHTML = `
+            <div class="no-recipe-message">
+            <h2>No Favorites Yet!</h2>
+            <p>Browse to your recipes and add some favorites to see them here!</p>
+            </div>`;
+        return;
+    }
+
+    favoriteRecipes.forEach((recipe, index) => {
+        const recipeDiv = document.createElement("div");
+        recipeDiv.className = "recipe";
+        recipeDiv.dataset.id = index;
+
+        const imageHTML = `<img src="${recipe.image}" alt="${recipe.title}" class="recipe-image">`;
+
+        recipeDiv.innerHTML = `
+            ${imageHTML}
+            <h3>${recipe.title}</h3>
+            `;
+
+        recipeDiv.addEventListener("click", () => {
+            openRecipeDetailWindow(recipe);
+        });
+
+        favoriteRecipeList.appendChild(recipeDiv);
+    });
+}
+
 function openRecipeDetailWindow(recipe) {
+    const recipeIndex = JSON.parse(localStorage.getItem("recipes")).findIndex(r => r.title === recipe.title);
     document.getElementById("recipe-detail-title").textContent = recipe.title;
     document.getElementById("recipe-detail-image").src = recipe.image;
     document.getElementById("recipe-detail-ingredients").textContent = recipe.ingredients;
     document.getElementById("recipe-detail-instructions").textContent = recipe.instructions;
+
+    const favoriteButton = document.getElementById("favorite-button");
+    favoriteButton.textContent = recipe.favorite ? "★ Favorite" : "☆ Add to Favorites";
+    favoriteButton.onclick = () => toggleFavorite(recipeIndex);
+
     document.getElementById("recipe-detail-window").style.display = "flex";
+}
+
+function toggleFavorite(index) {
+    const recipes = JSON.parse(localStorage.getItem("recipes")) || [];
+    recipes[index].favorite = !recipes[index].favorite;
+    localStorage.setItem("recipes", JSON.stringify(recipes));
+
+    if(document.getElementById("recipe-list")) {
+        loadRecipes();
+    } else if (document.getElementById("favorite-recipe-list")) {
+        loadFavoriteRecipes();
+    }
+
+    openRecipeDetailWindow(recipes[index]);
 }
 
 function closeRecipeDetailWindow() {
@@ -130,15 +195,19 @@ function searchRecipes() {
     displayRecipes(filteredRecipes);
 }
 
-function deleteRecipe(index) {
+function deleteRecipe(originalIndex) {
     const recipes = JSON.parse(localStorage.getItem("recipes")) || [];
     event.stopPropagation();
 
-    recipes.splice(index, 1);
+    recipes.splice(originalIndex, 1);
 
     localStorage.setItem("recipes", JSON.stringify(recipes));
 
-    loadRecipes();
+    if (window.location.pathname.includes("favorites.html")) {
+        loadFavoriteRecipes();
+    } else {
+        loadRecipes();
+    }
 }
 
 function openRecipeWindow() {
