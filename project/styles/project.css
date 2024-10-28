@@ -17,6 +17,10 @@ html, body {
     padding: 0;
 }
 
+.line-breaks {
+    white-space: pre-line;
+}
+
 main {
     flex: 1;
     background-color: var(--secondary-color);

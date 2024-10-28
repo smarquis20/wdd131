@@ -195,11 +195,11 @@ function searchRecipes() {
     displayRecipes(filteredRecipes);
 }
 
-function deleteRecipe(originalIndex) {
+function deleteRecipe(index) {
     const recipes = JSON.parse(localStorage.getItem("recipes")) || [];
     event.stopPropagation();
 
-    recipes.splice(originalIndex, 1);
+    recipes.splice(index, 1);
 
     localStorage.setItem("recipes", JSON.stringify(recipes));
 
