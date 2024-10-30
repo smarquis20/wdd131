@@ -70,7 +70,7 @@ function displayRecipes(recipes) {
         recipeDiv.className = "recipe";
         recipeDiv.dataset.id = index;
 
-        const imageHTML = `<img src="${recipe.image}" alt="${recipe.title}" class="recipe-image">`;
+        const imageHTML = `<img src="${recipe.image}" loading="lazy" alt="${recipe.title}" class="recipe-image">`;
 
         recipeDiv.innerHTML = `
             ${imageHTML}
@@ -140,7 +140,7 @@ function toggleFavorite(index) {
     recipes[index].favorite = !recipes[index].favorite;
     localStorage.setItem("recipes", JSON.stringify(recipes));
 
-    if(document.getElementById("recipe-list")) {
+    if (document.getElementById("recipe-list")) {
         loadRecipes();
     } else if (document.getElementById("favorite-recipe-list")) {
         loadFavoriteRecipes();
