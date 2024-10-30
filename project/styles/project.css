@@ -508,6 +508,32 @@ footer {
     #favorite-recipe-list {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    #recipe-detail-window {
+        padding: .5rem;
+    }
+
+    .recipe-detail-content {
+        grid-template-columns: 1fr;
+        padding: 0;
+        text-align: center;
+    }
+    
+    .recipe-left-section {
+        padding: 0;
+        margin: 0;
+    }
+    
+    .recipe-left-items {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    
+    .detail-recipe-image {
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+    }
 }
 
 @media (max-width: 600px) {
@@ -517,5 +543,31 @@ footer {
     
     #favorite-recipe-list {
         grid-template-columns: 1fr;
+    }
+
+    #recipe-detail-window {
+        padding: .5rem;
+    }
+
+    .recipe-detail-content {
+        grid-template-columns: 1fr;
+        padding: 0;
+        text-align: center;
+    }
+    
+    .recipe-left-section {
+        padding: 0;
+        margin: 0;
+    }
+    
+    .recipe-left-items {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    
+    .detail-recipe-image {
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
     }
 }
