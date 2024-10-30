@@ -106,7 +106,7 @@ function displayFavoriteRecipes(favoriteRecipes) {
         recipeDiv.className = "recipe";
         recipeDiv.dataset.id = index;
 
-        const imageHTML = `<img src="${recipe.image}" alt="${recipe.title}" class="recipe-image">`;
+        const imageHTML = `<img src="${recipe.image}" loading="lazy" alt="${recipe.title}" class="recipe-image">`;
 
         recipeDiv.innerHTML = `
             ${imageHTML}

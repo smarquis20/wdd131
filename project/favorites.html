@@ -43,16 +43,26 @@
             <div id="favorite-recipe-list"></div>
         </div>
     </main>
-    <div id="recipe-detail-window" class="window">
-        <div class="window-content">
-            <span class="close" onclick="closeRecipeDetailWindow()">&times;</span>
+    <div id="recipe-detail-window">
+        <div class="detail-header">
             <h2 id="recipe-detail-title">placeholder</h2>
-            <img src="placeholder" id="recipe-detail-image" class="recipe-image" alt="Recipe Image">
-            <h3><strong>Ingredients:</strong></h3>
-            <p id="recipe-detail-ingredients" class="line-breaks">placeholder</p>
-            <h3><strong>Instructions:</strong></h3>
-            <p id="recipe-detail-instructions" class="line-breaks">placeholder</p>
+            <span class="close" onclick="closeRecipeDetailWindow()">&times;</span>
             <button id="favorite-button">☆ Add to Favorites</button>
+        </div>
+        <div class="recipe-detail-content">
+            <div class="recipe-left-section">
+                <div class="recipe-left-items">
+                    <h3><strong>Ingredients:</strong></h3>
+                    <p id="recipe-detail-ingredients" class="line-breaks">placeholder</p>
+                </div>
+                <div class="recipe-left-items">
+                    <h3><strong>Instructions:</strong></h3>
+                    <p id="recipe-detail-instructions" class="line-breaks">placeholder</p>
+                </div>
+            </div>
+            <div class="recipe-right-section">
+                <img src="placeholder" id="recipe-detail-image" class="detail-recipe-image" alt="Recipe Image">
+            </div>
         </div>
     </div>
     <footer>
